@@ -1,7 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Alata", sans-serif;
 }
 
 a {
@@ -31,7 +30,7 @@ nav {
 .nav-links li {
     display: inline-block;
     margin: 0 15px;
-    font-size: 20px;
+    font-size: 25px;
 
 }
 
@@ -86,16 +85,15 @@ nav {
 }
 
 .front-image {
-    padding-left: 0;
     margin: 0%;
     position: relative;
     display: block;
     width: 1680px;
-    height: 630px;
+    height: 800px;
 }
 
 .new-collection {
-    font-size: 70px;
+    font-size: 80px;
     color: white;
     position: absolute;
     top: 110px;
@@ -103,56 +101,100 @@ nav {
     padding: 0 20px;
 }
 
-.women-btn {
+#women-btn {
     display: inline-block;
     font-size: 30px;
     color: white;
     background-color: transparent;
-    border: 3px solid white;
+    border: 4px solid white;
     border-radius: 15px;
     padding: 15px 30px;
     position: absolute;
-    top: 110px;
+    top: 350px;
     right: 500px;
-    transition: background-color ease 400ms;
+    transition: all 0, 25s;
+
 }
 
-.women-btn:hover {
+#women-btn:hover {
     color: white;
 }
 
-
-.men-btn {
+#men-btn {
     display: inline-block;
     font-size: 30px;
     color: white;
     position: absolute;
     background-color: transparent;
-    border: 3px solid white;
+    border: 4px solid white;
     border-radius: 15px;
-    padding: 15px 30px;
+    padding: 15px 50px;
     position: absolute;
-    top: 230px;
-    right: 500px;
-    transition: background-color ease 400ms;
+    top: 350px;
+    right: 300px;
 }
 
-.men-btn:hover {
+#men-btn:hover {
     color: white;
 }
 
-.comfort-zone {
-    padding: 100px 100px;
+h3 {
+    padding: 20px 30px;
 }
 
-.hiking {
-    font-size: 50px;
-    color: rgb(255, 255, 255);
+#comfort-zone {
+    margin: 70px auto;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+}
+
+#hiking {
+    width: 760px;
+    height: 400px;
+    background-image: url("images/nathan-dumlao-pLoMDKtl-JY-unsplash.jpg");
+    background-size: cover; 
+    transform: translate(50px, 50px);
+    background-position: center;
+    font-size: 2em;
+    color: white;
+}
+
+#skiing {
+    width: 760px;
+    height: 300px;
+    background-image: url("images/joris-berthelot-EnTU_hr9wPA-unsplash.jpg");
+    background-size: cover;
+    transform: translate(860px, -350px);
+    background-position: center;
+    font-size: 2em;
+    color: white;
+}
+
+#canoeing {
+    width: 760px;
+    height: 300px;
+    background-image: url("images/brady-stoeltzing-m8oAzXoedho-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    transform: translate(50px, -200px);
+    font-size: 2em;
+    color: white;
+}
+
+#camping {
+    width: 760px;
+    height: 400px;
+    background-image: url("images/victor-larracuente-JQfYGhUcDSg-unsplash.jpg");
+    background-size: cover;
+    transform: translate(860px, -600px);
+    background-position: 25% 75%;
+    font-size: 2em;
+    color: white;
 }
 
 .page-name {
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     margin: 40px;
     padding: 20px 20px;
@@ -178,6 +220,6 @@ nav {
 
 span {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:  #504545;
+    color: #504545;
     display: block;
 }
