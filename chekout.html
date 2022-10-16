@@ -34,20 +34,19 @@
 </body>
 <p>Checkout</p>
 <div>Shipping information
-    <form action="shipping info"></form>
-    <input type="text" placeholder="name">
-    <input type="text" placeholder="surname">
-    <input type="tel" placeholder="telephone">
-    <input type="email" placeholder="email">
-    <input type="text" placeholder="address">
-    <input type="text" placeholder="city">
+    <form action="shipping info">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="surname" name="surname">
+    <input type="tel" placeholder="telephone" name="telephone">
+    <input type="email" placeholder="email" name="email">
+    <input type="text" placeholder="address" name="address">
+    <input type="text" placeholder="city" name="city">
 </div>
 <div>Payment information
-    <form action="payment info">
-        <input type="number" placeholder="card number">
-        <input type="number" placeholder="expiration date">
-        <input type="number" placeholder="CVV">
-    </form>
+        <input type="text" placeholder="card number" name="card">
+        <input type="text" placeholder="expiration date" name="expiration">
+        <input type="text" placeholder="CVV" name="cvv">
+    
 </div>
 <div>Delivery
     <div>
@@ -61,12 +60,12 @@
     </div>
 </div>
 <div>
-    <form action="agree">
         <input type="checkbox" id="terms" name="terms">
         <label for="terms">I agree to terms and conditions</label>
     <input type="checkbox" id="offers" name="offers">
     <label for="offers">I want to get news letters about sales and special offers</label>
-    </form>
+ <button>buy</button>  
+</form>
 </div>
 
 </html>
