@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="rainydays" content="width=device-width, initial-scale=1.0">
-    <title>Rainydays | Home </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainydays | Contacts</title>
     <link rel="stylesheet" href="style.css" <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
@@ -16,11 +16,11 @@
     <header>
         <nav>
             <a href="index.html"><img src="images/RainyDays_Logo.png" class="logo">
-                </a>
+            </a>
             <a href="about.html" class="nav-links">About</a>
             <a href="products-women.html" class="nav-links">Women</a>
             <a href="products-men.html" class="nav-links">Men</a>
-            <a href="contacts.html" class="nav-links">Contacts</a>
+            <a href="contacts.html" class="active">Contacts</a>
             <div class="container">
                 <form action="/search/" method="get" class="search-bar" role="search">
                     <input type="text" placeholder="search for a jacket" name="q">
@@ -31,25 +31,16 @@
         </nav>
     </header>
     <main>
-        <section class="new_collection">
-            <h1>new collection</h1>
-            <a href="products-women.html" id="women-btn">women</a>
-            <a href="products-men.html" id="men-btn">men</a>
-        </section>
-        </section class="comfort_zone">
-        <h2>Pushing the Comfort Zone</h2>
-        <div id="hiking">
-            <h3>Hiking</h3>
-        </div>
-        <div id="skiing">
-            <h3>Skiing</h3>
-        </div>
-        <div id="canoeing">
-            <h3>Canoeing</h3>
-        </div>
-        <div id="camping">
-            <h3>Camping</h3>
-        </div>
+        <h1 class="page-name">Contacts</h1>
+        <section class="contacts">
+            <div><img src="images/jacek-dylag-tERXiNBHWcw-unsplash.jpg" alt="Oslo Barcode neighbourhood "></div>
+            <div><img src="images/leonard-reeb-S-gj2BlwWjU-unsplash.jpg" alt="Bergen Bryggen"></div>
+            <div><h2>Oslo</h2>
+                <p>Fødselsgate, 01</p>
+                <p>Ekteskaptorg, 36</p>  
+                <p>Heltlivvei, 100</p></div>
+            <div><h2>Bergen</h2>
+                <p>Fiskegate, 03</p></div>
         </section>
     </main>
     <footer>
@@ -70,6 +61,7 @@
             <div><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></div>
         </div>
     </footer>
+
 </body>
 
 </html>

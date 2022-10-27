@@ -15,10 +15,12 @@ a:hover {
 nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    width: 100%;
+    height: 100px;
 }
 
 .logo {
+    position: relative;
     width: 150px;
     padding: 0 50px;
 }
@@ -26,10 +28,14 @@ nav {
 .nav-links {
     padding: 10px 0;
     margin: 0 15px;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    font-size: 20px;
+}
+
+.active {
+    padding: 10px 0;
+    margin: 0 15px;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 .container {
@@ -40,18 +46,16 @@ nav {
     display: flex;
     align-items: center;
     color: #D9D9D9;
-
 }
 
 .search-bar {
-    width: 200px;
-    height: 20px;
-    max-width: 500px;
+    width: 300px;
+    height: 15px;
     display: flex;
     align-items: center;
-    border-radius: 60px;
+    border-radius: 10px;
     border: #D9D9D9 solid;
-    border-width: 3px;
+    border-width: 2px;
     padding: 10px 20px;
 }
 
@@ -66,7 +70,7 @@ nav {
 }
 
 .search-bar button img {
-    width: 25px;
+    width: 40px;
     background-color: white;
 }
 
@@ -74,29 +78,31 @@ nav {
     background-color: white;
     border: 0;
     cursor: pointer;
-
 }
 
-.front-page {
-    position: relative;
-    text-align: center;
-}
-
-.front-image {
-    margin: 0%;
-    position: relative;
-    display: block;
+footer {
+    background-color: #D9D9D9;
+    bottom: 0;
     width: 100%;
-    height: 800px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-top: 20px;
+    justify-items: center;
 }
+/* index.html */
 
-.new-collection {
-    font-size: 80px;
+.new_collection {
+    background-image: url("images/jason-blackeye-edu_UJYxJBA-unsplash.jpg");
+    width: 100%;
+    min-height: 850px;
+    background-size: cover;
+    background-repeat: no repeat;
+    background-position: bottom;
     color: white;
-    position: absolute;
-    top: 110px;
-    left: 30px;
-    padding: 0 20px;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 #women-btn {
@@ -106,16 +112,14 @@ nav {
     background-color: transparent;
     border: 4px solid white;
     border-radius: 15px;
-    padding: 15px 30px;
+    padding: 15px 40px;
     position: absolute;
     top: 350px;
     right: 500px;
-    transition: all 0, 25s;
-
 }
 
 #women-btn:hover {
-    color: white;
+    background-color: rgb(255, 255, 255, 0.2);
 }
 
 #men-btn {
@@ -126,14 +130,14 @@ nav {
     background-color: transparent;
     border: 4px solid white;
     border-radius: 15px;
-    padding: 15px 50px;
+    padding: 15px 60px;
     position: absolute;
     top: 350px;
     right: 300px;
 }
 
 #men-btn:hover {
-    color: white;
+    background-color: rgb(255, 255, 255, 0.2);
 }
 
 #comfort-zone {
@@ -149,40 +153,30 @@ h3 {
     font-size: 2em;
 }
 
-#hiking {
-    width: 760px;
-    height: 400px;
-    background-image: url("images/nathan-dumlao-pLoMDKtl-JY-unsplash.jpg");
-    background-size: cover;
-    transform: translate(50px, 50px);
-    background-position: center;
+
+
+h4 {
+    font-size: 1.1em;
 }
 
-#skiing {
-    width: 760px;
-    height: 300px;
-    background-image: url("images/joris-berthelot-EnTU_hr9wPA-unsplash.jpg");
-    background-size: cover;
-    transform: translate(860px, -350px);
-    background-position: center;
+.subscribe {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 20px;
 }
 
-#canoeing {
-    width: 760px;
-    height: 300px;
-    background-image: url("images/brady-stoeltzing-m8oAzXoedho-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    transform: translate(50px, -200px);
+.subscribe.submit {
+    background-color: #3F4E4F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0;
 }
 
-#camping {
-    width: 760px;
-    height: 400px;
-    background-image: url("images/victor-larracuente-JQfYGhUcDSg-unsplash.jpg");
-    background-size: cover;
-    transform: translate(860px, -600px);
-    background-position: 25% 75%;
+.subscribe.submit:hover {
+    background-color: #D77A30;
 }
 
 .page-name {
@@ -192,18 +186,18 @@ h3 {
     padding: 20px 20px;
 }
 
+/* about */
+
 #happy-couple {
-    margin: 40px;
+    margin: 10px 30px ;
     width: 350px;
     height: 500px;
     float: left;
+    background-size: cover;
 }
 
 .about {
     display: inline;
-}
-
-#about {
     margin: 40px;
     padding: 40px;
     font-size: 20px;
@@ -229,11 +223,12 @@ span {
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .product {
     flex: 1 0 100%;
 }
 
-@media(min-width: 440px){
+@media(min-width: 440px) {
     .product {
         flex: 1 0 300px;
     }
@@ -241,7 +236,7 @@ span {
 
 .price {
     font-size: 1.2em;
-    font-weight: 1.5em ;
+    font-weight: 1.5em;
     color: black;
     font-family: "Alata", sans-serif;
 }
@@ -258,4 +253,28 @@ span {
     background-color: #A27B5C;
     border-radius: 10px;
     padding: 5px 15px;
+}
+
+/* contacts.html */
+
+.contacts img {
+    width: 600px;
+    height: 400px;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.contacts h2,
+p {
+    padding: 20px;
+}
+
+/* shipping */
+
+.shipping {
+    text-align: center;
 }
