@@ -14,21 +14,26 @@
 
 <body>
     <header>
-        <nav>
-            <a href="index.html"><img src="images/RainyDays_Logo.png" class="logo">
+        <nav>  
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        <a href="index.html"><img src="images/RainyDays_Logo.png" class="logo">
                 </a>
-            <a href="about.html" class="nav-links">About</a>
-            <a href="products-women.html" class="nav-links">Women</a>
-            <a href="products-men.html" class="nav-links">Men</a>
-            <a href="contacts.html" class="nav-links">Contacts</a>
-            <div class="container">
+               <ul> 
+            <li><a href="about.html" class="nav-links">About</a></li>
+            <li><a href="products-women.html" class="nav-links">Women</a></li>
+            <li><a href="products-men.html" class="nav-links">Men</a></li>
+            <li><a href="contacts.html" class="nav-links">Contacts</a></li>
+            <li><div class="container" id="search_bar">
                 <form action="/search/" method="get" class="search-bar" role="search">
                     <input type="text" placeholder="search for a jacket" name="q">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
-            <a href="shopping_basket.html" id="shopping_basket"><i class="fa-solid fa-bag-shopping"></i></a>
-        </nav>
+            <li><a href="shopping_basket.html" id="shopping_basket"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        </ul></nav>
     </header>
     <main>
         <section class="new_collection">
@@ -53,18 +58,18 @@
         </section>
     </main>
     <footer>
-        <div>
+        <div class="footer first">
             <h4>Subscribe to our news letter</h4>
             <div><input type="email" class="subscribe">
                 <input type="submit" class="subscribe submit">
             </div>
         </div>
-        <div>
+        <div class="footer second">
             <h4>Shopping help</h4>
             <div><a href="shipping.html">Shipping</a></div>
             <div><a href="contacts.html">Contacts</a></div>
         </div>
-        <div>
+        <div class="footer third">
             <h4>Follow us</h4>
             <div><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></i></a></div>
             <div><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></div>

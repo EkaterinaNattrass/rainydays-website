@@ -15,31 +15,39 @@
 <body>
     <header>
         <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
             <a href="index.html"><img src="images/RainyDays_Logo.png" class="logo">
             </a>
-            <a href="about.html" class="nav-links">About</a>
-            <a href="products-women.html" class="nav-links">Women</a>
-            <a href="products-men.html" class="nav-links">Men</a>
-            <a href="contacts.html" class="active">Contacts</a>
-            <div class="container">
-                <form action="/search/" method="get" class="search-bar" role="search">
-                    <input type="text" placeholder="search for a jacket" name="q">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </div>
-            <a href="shopping_basket.html" id="shopping_basket"><i class="fa-solid fa-bag-shopping"></i></a>
+            <ul>
+                <li><a href="about.html" class="nav-links">About</a></li>
+                <li><a href="products-women.html" class="nav-links">Women</a></li>
+                <li><a href="products-men.html" class="nav-links">Men</a></li>
+                <li><a href="contacts.html" class="active">Contacts</a></li>
+                <li>
+                    <div class="container" id="search_bar">
+                        <form action="/search/" method="get" class="search-bar" role="search">
+                            <input type="text" placeholder="search for a jacket" name="q">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                <li><a href="shopping_basket.html" id="shopping_basket"><i class="fa-solid fa-bag-shopping"></i></a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
         <h1 class="page-name">Contacts</h1>
         <section class="contacts">
-            <div><img src="images/jacek-dylag-tERXiNBHWcw-unsplash.jpg" alt="Oslo Barcode neighbourhood "></div>
-            <div><img src="images/leonard-reeb-S-gj2BlwWjU-unsplash.jpg" alt="Bergen Bryggen"></div>
-            <div><h2>Oslo</h2>
+            <div><img src="images/jacek-dylag-tERXiNBHWcw-unsplash.jpg" alt="Oslo Barcode neighbourhood ">
+                <h2>Oslo</h2>
                 <p>Fødselsgate, 01</p>
-                <p>Ekteskaptorg, 36</p>  
+                <p>Ekteskaptorg, 36</p>
                 <p>Heltlivvei, 100</p></div>
-            <div><h2>Bergen</h2>
+            <div><img src="images/leonard-reeb-S-gj2BlwWjU-unsplash.jpg" alt="Bergen Bryggen">
+                <h2>Bergen</h2>
                 <p>Fiskegate, 03</p></div>
         </section>
     </main>

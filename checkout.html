@@ -5,87 +5,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>checkout page</title>
+    <title>Rainydays | checkout page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c2f32b1a72.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="images/RainyDays_Logo.png" class="logo">
-
-            <ul class="nav-links">
-                <li><a href="about.html">About</a></li>
-                <li><a href="women.html">Women</a></li>
-                <li><a href="men.html">Men</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="index.html"><img src="images/RainyDays_Logo.png" class="logo">
+            </a>
+            <ul>
+                <li><a href="about.html" class="nav-links">About</a></li>
+                <li><a href="products-women.html" class="nav-links">Women</a></li>
+                <li><a href="products-men.html" class="nav-links">Men</a></li>
+                <li><a href="contacts.html" class="nav-links">Contacts</a></li>
                 <li>
-                    <div class="container">
+                    <div class="container" id="search_bar">
                         <form action="/search/" method="get" class="search-bar" role="search">
                             <input type="text" placeholder="search for a jacket" name="q">
-                            <button type="submit"><img src="images/ Search.svg"></button>
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                     </div>
+                <li><a href="shopping_basket.html" id="shopping_basket"><i class="fa-solid fa-bag-shopping"></i></a>
                 </li>
-                <li><img src="images/ Shopping_Bag.svg" alt=""></li>
             </ul>
         </nav>
-    </header>
-
-<p>Checkout</p>
-<form action="checkout-success.php" method="POST"></form>
-<fieldset>
-    <legend>Shipping information</legend>
-    <form action="shipping info">
-        <input type="text" placeholder="name" name="name">
-        <input type="text" placeholder="surname" name="surname">
-        <input type="tel" placeholder="telephone" name="telephone">
-        <input type="email" placeholder="email" name="email">
-        <input type="text" placeholder="address" name="address">
-        <input type="text" placeholder="city" name="city">
-</fieldset>
-<fieldset> 
-    <legend>Payment information</legend> 
-    <input type="text" placeholder="card number" name="card">
-    <input type="text" placeholder="expiration date" name="expiration">
-    <input type="text" placeholder="CVV" name="cvv">
-</fieldset>
-
-<fieldset>
-    <legend>Delivery</legend> 
-    <div>
-        <input type="radio" id="posten" name="delivery" value="posten">
-        <label for="posten">Posten - 3-5 working days</label>
-    </div>
-    <div>
-        <input type="radio" id="pickup" name="delivery" value="pickup">
-        <label for="pickup">Pickup at our store</label>
-    </div>
-</fieldset>
-<div>
-    <input type="checkbox" id="terms" name="terms">
-    <label for="terms">I agree to terms and conditions</label>
-    <input type="checkbox" id="offers" name="offers">
-    <label for="offers">I want to get news letters about sales and special offers</label>
-    <input type="submit" value="Buy">
-    </form>
-</div>
-<footer>
-    <div>
-    <label for="subscribe">Subscribe to our news letter</label>
-    <input type="email" id="subscribe">
-    <input type="submit">
-    </div>
-    <div>
-        <h4>Shopping help</h4>
-        <a href="shipping.html">Shipping</a>
-        <a href="contacts.html">Contacts</a>
-    </div>
-    <div>
-        <h4>Follow us</h4>
-        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></i></a>
-        <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
-    </div>
-</footer>
+        <main>
+            <h1 class="page-name">Checkout</h1>
+            <form action="checkout-success.php" method="POST" class="checkout">
+                <h2>Shipping information</h2>
+                <input type="text" placeholder="name" name="name">
+                <input type="text" placeholder="surname" name="surname">
+                <input type="tel" placeholder="telephone" name="telephone">
+                <input type="email" placeholder="email" name="email">
+                <input type="text" placeholder="address" name="address">
+                <input type="text" placeholder="city" name="city">
+                <h2>Payment information</h2>
+                <input type="text" placeholder="card number" name="card">
+                <input type="text" placeholder="expiration date" name="expiration">
+                <input type="text" placeholder="CVV" name="cvv">
+                <h2>Delivery</h2>
+                <div>
+                    <input type="radio" id="posten" name="delivery" value="posten">
+                    <label for="posten">Posten - 3-5 working days</label>
+                </div>
+                <div>
+                    <input type="radio" id="pickup" name="delivery" value="pickup">
+                    <label for="pickup">Pickup at our store</label>
+                </div>
+                <div> <ul>
+                    <li><input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to terms and conditions</label></li>
+                    <li><input type="checkbox" id="offers" name="offers">
+                    <label for="offers">I want to get news letters about sales and special offers</label></li>
+                    <li><input type="submit" value="Order now"></li></ul>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="footer first">
+                <h4>Subscribe to our news letter</h4>
+                <div><input type="email" class="subscribe">
+                    <input type="submit" class="subscribe submit">
+                </div>
+            </div>
+            <div class="footer second">
+                <h4>Shopping help</h4>
+                <div><a href="shipping.html">Shipping</a></div>
+                <div><a href="contacts.html">Contacts</a></div>
+            </div>
+            <div class="footer third">
+                <h4>Follow us</h4>
+                <div><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></i></a></div>
+                <div><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></div>
+            </div>
+        </footer>
 </body>
+
 </html>
