@@ -60,12 +60,7 @@ nav ul li {
 }
 
 @media (max-width:1200px) {
-    .logo {
-        max-width: 70px;
-        padding-left: 50px;
-        padding-top: 25px;
-    }
-
+    
     #search_bar,
     #shopping_basket {
         display: none;
@@ -93,7 +88,7 @@ nav ul li {
         height: 100vh;
         background-color: #D9D9D9;
         top: 100px;
-        left: -100%;
+        left: -110%;
         text-align: center;
         transition: all 2s;
     }
@@ -114,24 +109,13 @@ nav ul li {
     text-decoration: underline;
 }
 
-.container {
-    width: 100%;
-    padding: 5%;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    color: #D9D9D9;
-}
-
 .search-bar {
     width: 300px;
     height: 15px;
     display: flex;
     align-items: center;
     border-radius: 10px;
-    border: #D9D9D9 solid;
-    border-width: 2px;
+    border: 2px #D9D9D9 solid;
     padding: 10px 20px;
 }
 
@@ -139,15 +123,9 @@ nav ul li {
     background: transparent;
     flex: 1;
     border: 0;
-    outline: none;
     padding: 20px 20px;
     font-size: 15px;
     color: #D9D9D9;
-}
-
-.search-bar button img {
-    width: 40px;
-    background-color: white;
 }
 
 .search-bar button {
@@ -359,7 +337,7 @@ span {
     input[type="email"],
     input[type="tel"] {
         box-sizing: border-box;
-        border: 2px solid #EDEDED;
+        /*border: 2px solid #EDEDED;*/
         border-radius: 5px;
         padding: 0.5em 0.7em;
         font-size: 1em;
@@ -460,6 +438,5 @@ span {
 
     .shipping {
         text-align: center;
-        color: #D77A30;
 
     }
