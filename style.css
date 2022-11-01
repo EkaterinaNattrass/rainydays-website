@@ -188,7 +188,6 @@ footer a {
     border-radius: 5px;
     padding: 5px 10px;
     margin: 0;
-    cursor: ;
 }
 
 .subscribe.submit:hover {
@@ -377,6 +376,7 @@ span {
     border-radius: 15px;
     background-color:#504545;
     color: white;
+}
 
     .checkout {
         display: flex-box;
@@ -460,4 +460,6 @@ span {
 
     .shipping {
         text-align: center;
+        color: #D77A30;
+
     }
