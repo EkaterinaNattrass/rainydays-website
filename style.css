@@ -138,6 +138,7 @@ nav ul li {
 
 footer {
     color: #0A3641;
+    font-size: 1.2em;
     background-color: #D9D9D9;
     width: 100%;
     padding: 20px 0;
@@ -145,7 +146,12 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    line-height: 2;
 }
+#footer_second h4 {
+    font-weight: bolder;
+}
+
 
 footer a {
     color: #0A3641;
@@ -154,18 +160,16 @@ footer a {
 .subscribe {
     border: none;
     border-radius: 5px;
-    padding: 5px 10px;
-    margin: 0;
 }
 
 .subscribe.submit {
     background-color: #0A3641;
     color: white;
     font-size: 1.1em;
+    width: 150px;
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
-    margin: 0;
 }
 
 .subscribe.submit:hover {
