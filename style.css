@@ -410,16 +410,10 @@ button[type="submit"] {
 }
 
 .price {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 1.5em;
     color: black;
     font-family: "Alata", sans-serif;
-}
-
-#size {
-    font-family: "Alata", sans-serif;
-    font-size: 1.2em;
-    background-color: #D9D9D9;
 }
 
 #buy-now {
@@ -427,11 +421,65 @@ button[type="submit"] {
     color: white;
     background-color: #A27B5C;
     border-radius: 10px;
-    padding: 5px 15px;
+    padding: 10px 25px;
 }
 
 
+/* jacket-women, jacket-men.html */
 
+.product_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 18em;
+    margin: 0px 20px 10px 20px;
+}
+
+.details.more {
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+.details {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+
+#number {
+    width: 30px;
+    height: 30px;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+#size {
+    width: 30px;
+    height: 30px;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+#continue {
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: black solid 2px;
+    padding: 5px 20px;
+}
+
+#continue:hover {
+    border: #D77A30 solid 2px;
+}
+
+.order.btn {
+    align-self: center;
+
+}
 /* contacts.html */
 
 .contacts img {
