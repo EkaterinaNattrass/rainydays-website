@@ -62,7 +62,9 @@ nav ul li {
 @media (max-width:1200px) {
     
     #search_bar,
-    #shopping_basket {
+    #shopping_basket,
+    #magnifying_glass,
+    #placeholder {
         display: none;
     }
 
