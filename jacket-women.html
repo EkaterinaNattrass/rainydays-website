@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainydays | Shipping</title>
+    <title>Rainydays | Product</title>
     <link rel="stylesheet" href="style.css" <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c2f32b1a72.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -33,21 +34,66 @@
                             <button id="magnifying_glass"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
                         </form>
                     </div>
-                <li><a href="shopping_basket.html" id="shopping_basket"><i class="fa-solid fa-bag-shopping fa-lg"></i></a>
+                <li><a href="shopping_basket.html" id="shopping_basket"><i
+                            class="fa-solid fa-bag-shopping fa-lg"></i></a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1 class="page-name">Shipping</h1>
-        <section class="shipping">
-            <h2>Store pickup:</h2>
-            <p> You can pick up your order in one of our stores Monday - Saturday, 10 - 18.00 p.m.
-                Delivery to one of our stores is free for all orders.</p>
-            <h2>Posten:</h2>
-            <p>You can get your order delivered by Posten, which takes 3-5 working days based on your location.
-                Delivery is free for orders over 1000 NOK. </p>
-            </section>
+        <div class="product_container">
+            <div class="jacket">
+                <div class="gallery">
+                    <img src="images/karsten-winegeart-9beSs0ir1aI-unsplash.jpg"
+                        alt="a girl wearing a yellow rain jacket standing on a mountain">
+                    <img src="images/karsten-winegeart-37ma0WOGMLM-unsplash.jpg"
+                        alt="a girl wearing a yellow rain jacket walking in the forest">
+                    <img src="images/taneli-lahtinen-e57Hpo-Qek4-unsplash.jpg"
+                        alt="a girl wearing a yellow rain jacket in the fog">
+                </div>
+                <div class="details">
+                    <h3>Materials</h3>
+                    <p>
+                    <div><span class="material">Thor-TEX</span></div>
+                    <div><span class="material">OdinOrganic</span></div>
+                    </p>
+                    <h3>Activities</h3>
+                    <p>
+                    <div>Hiking</div>
+                    <div>Camping</div>
+                    <div>Canoeing</div>
+                    </p>
+                    <h3>Season</h3>
+                    <p>
+                    <div>Spring</div>
+                    <div>Autumn</div>
+                    </p>
+                </div>
+                <div>NOK 1200</div>
+                <div><label for="size">size</label>
+                    <select name="size" id="size">
+                        <option value></option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <input type="number" id="number">
+                </div>
+                <div class="details more">
+                    <h3>Product details</h3>
+                    <p>
+                    <div>Weight 410 gr</div>
+                    <div>Waterproof</div>
+                    <div>Windproof</div>
+                    <div>Breathable</div>
+                    <div>Internal pocket with zip</div>
+                    <div>Reflective safety logo</div></p>
+                </div>
+                <a href="checkout.html" id="buy-now"></a>
+            </div>
+
+        </div>
     </main>
     <footer>
         <div>
