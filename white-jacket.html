@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c2f32b1a72.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -33,19 +35,75 @@
                             <button id="magnifying_glass"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
                         </form>
                     </div>
-                <li><a href="shopping_basket.html" id="shopping_basket"><i class="fa-solid fa-bag-shopping fa-lg"></i></a>
+                <li><a href="shopping_basket.html" id="shopping_basket"><i
+                            class="fa-solid fa-bag-shopping fa-lg"></i></a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
+        <div class="product_container">
+            <div class="jacket">
+                <div class="gallery">
+                    <img src="images/white-jacket1-unsplash.jpg"
+                        alt="a girl wearing a yellow rain jacket standing on a mountain">
+                    <img src="images/white-jacket-unsplash.jpg"
+                        alt="a girl wearing a yellow rain jacket walking in the forest">
+                </div>
+                <div class="details more">
+                    <h3>Product details</h3>
+                    <p>
+                    <div>Weight 700 gr</div>
+                    <div>Padded, up to -20 degrees</div>
+                    <div>Windproof</div>
+                    <div>Breathable</div>
+                    <div>Internal pocket with zip</div>
+                    <div>Reflective safety logo</div>
+                    </p>
+                </div>
+            </div>
+            <div class="details">
+                <h3>Materials</h3>
+                <p>
+                <div><span class="material">Thor-TEX</span></div>
+                <div><span class="material">OdinOrganic</span></div>
+                </p>
+                <h3>Activities</h3>
+                <p>
+                <div>Hiking</div>
+                <div>skiing</div>
+                </p>
+                <h3>Season</h3>
+                <p>
+                <div>Winter</div>
 
+                </p>
+            </div>
+            <div class="order">
+                <div class="price">NOK 1200</div>
+                <div><label for="size">size</label>
+                    <select name="size" id="size">
+                        <option value></option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+                <div><label for="number">quantity</label>
+                    <input type="number" id="number">
+                </div>
+            </div>
+            <div><a href="checkout.html" id="buy-now">Buy Now</a>
+            </div>
+            <div><a href="products-men.html" id="continue">Continue shopping</a></div>
+        </div>
     </main>
     <footer>
         <div>
             <h4>Subscribe to our news letter</h4>
             <div><input type="email" class="subscribe">
-                <a href="subscribing.html"><input type="submit" class="subscribe submit"/></a>
+                <a href="subscribing.html"><input type="submit" class="subscribe submit" /></a>
             </div>
         </div>
         <div>
@@ -58,6 +116,7 @@
             <div><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram fa-xl"></i></a></div>
             <div><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook fa-xl"></i></a></div>
         </div>
-    </footer> 
+    </footer>
 </body>
+
 </html>
