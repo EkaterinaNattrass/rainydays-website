@@ -34,47 +34,62 @@
                             <button id="magnifying_glass"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
                         </form>
                     </div>
-                <li><a href="shopping_basket.html" id="shopping_basket"><i class="fa-solid fa-bag-shopping fa-lg"></i></a>
+                <li><a href="shopping_basket.html" id="shopping_basket"><i
+                            class="fa-solid fa-bag-shopping fa-lg"></i></a>
                 </li>
             </ul>
         </nav>
         <main>
             <h1 class="page-name">Checkout</h1>
-            <form action="checkout-success.php" method="POST" class="checkout">
-                <h2>Shipping information</h2>
-                <input type="text" placeholder="name" name="name">
-                <input type="text" placeholder="surname" name="surname">
-                <input type="tel" placeholder="telephone" name="telephone">
-                <input type="email" placeholder="email" name="email">
-                <input type="text" placeholder="address" name="address">
-                <input type="text" placeholder="city" name="city">
-                <h2>Payment information</h2>
-                <input type="text" placeholder="card number" name="card">
-                <input type="text" placeholder="expiration date" name="expiration">
-                <input type="text" placeholder="CVV" name="cvv">
-                <h2>Delivery</h2>
-                <div>
-                    <input type="radio" id="posten" name="delivery" value="posten">
-                    <label for="posten">Posten - 3-5 working days</label>
-                </div>
-                <div>
-                    <input type="radio" id="pickup" name="delivery" value="pickup">
-                    <label for="pickup">Pickup at our store</label>
-                </div>
-                <div> <ul>
-                    <li><input type="checkbox" id="terms" name="terms">
-                    <label for="terms">I agree to terms and conditions</label></li>
-                    <li><input type="checkbox" id="offers" name="offers">
-                    <label for="offers">I want to get news letters about sales and special offers</label></li>
-                    <li><input type="submit" value="Order now"></li></ul>
-                </div>
+            <form action="checkout-success.php" method="POST">
+
+                <div id="checkout_container">
+                    <div class="shipping">
+                        <h2 class="checkout">Shipping information</h2>
+                        <div class="shipping info">
+                            <input type="text" placeholder="name" name="name" id="name">
+                            <input type="text" placeholder="surname" name="surname" id="surname">
+                            <input type="tel" placeholder="telephone" name="telephone" id="telephone">
+                            <input type="email" placeholder="email" name="email" id="email">
+                            <input type="text" placeholder="address" name="address" id="address">
+                            <input type="text" placeholder="city" name="city" id="city">
+                        </div>
+                        <h2 class="checkout">Delivery</h2>
+                        <div class="delivery">
+                            <input type="radio" id="posten" name="delivery" value="posten">
+                            <label for="posten">Posten - 3-5 working days</label>
+                        </div>
+                        <div class="delivery">
+                            <input type="radio" id="pickup" name="delivery" value="pickup">
+                            <label for="pickup">Pickup at our store</label>
+                        </div>
+                    </div>
+
+                    <div class="payment">
+                        <h2 class="checkout">Payment information</h2>
+                        <input type="text" placeholder="card number" name="card" id="card">
+                        <input type="text" placeholder="expiration date" name="expiration" id="expiration">
+                        <input type="text" placeholder="CVV" name="cvv" id="cvv">
+                        <div class="terms offers">
+                            <ul>
+                                <li><input type="checkbox" id="terms" name="terms">
+                                    <label for="terms">I agree to terms and conditions</label>
+                                </li>
+                                <li><input type="checkbox" id="offers" name="offers">
+                                    <label for="offers">I want to get news letters about sales and special
+                                        offers</label>
+                                </li>
+                                <li><input type="submit" value="Order now" id="buy-now"></li>
+                            </ul>
+                        </div>
+                    </div>
             </form>
         </main>
         <footer>
             <div>
                 <h4>Subscribe to our news letter</h4>
                 <div><input type="email" class="subscribe">
-                    <a href="subscribing.html"><input type="submit" class="subscribe submit"/></a>
+                    <a href="subscribing.html"><input type="submit" class="subscribe submit" /></a>
                 </div>
             </div>
             <div>
