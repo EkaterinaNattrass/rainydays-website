@@ -102,6 +102,21 @@ nav ul li {
     #check:checked~ul {
         left: 0;
     }
+
+    #checkout_container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:700px) {
+    .shipping.info {
+        display: flex;
+        flex-direction: column;
+    }
+    .shipping.info input {
+        max-width: 200px;
+    }
 }
 
 .active {
@@ -402,9 +417,10 @@ width: 200px;
 #cvv {
     width: 80px;}
 
-.terms.offers {
-  line-height: 1.8em;
+.terms.offers li {
+    margin-top: 20px;
 }
+
 
 
 /* products-women,products-men.html */
