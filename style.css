@@ -114,6 +114,7 @@ nav ul li {
         display: flex;
         flex-direction: column;
     }
+
     .shipping.info input {
         max-width: 200px;
     }
@@ -316,6 +317,27 @@ footer a {
     padding-bottom: 200px;
 }
 
+@media (max-width: 640px) {
+    .new_collection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comfort_zone {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #hiking,
+    #skiing,
+    #camping,
+    #canoeing {
+        margin: 10px 0 10px 0;
+        width: 80%;
+    }
+}
+
 
 .page-name {
     color: black;
@@ -356,7 +378,7 @@ span {
 /* Checkout page */
 
 #checkout_container {
-    margin: 20px 0px 20px 30px;   
+    margin: 20px 0px 20px 30px;
     display: flex;
 }
 
@@ -374,23 +396,24 @@ input[type="tel"] {
     padding: 0.5em 0.7em;
     font-size: 1em;
     margin: 10px 0px 10px 30px;
-}   
+}
 
 .shipping.info {
-display: flex;
-flex-wrap: wrap;
-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
 }
 
 #name {
-width: 200px;
+    width: 200px;
 }
 
 #surname {
     width: 400px;
 }
 
-#telephone, #email {
+#telephone,
+#email {
     width: 630px;
 }
 
@@ -401,21 +424,24 @@ width: 200px;
 #city {
     width: 200px;
 }
+
 .delivery {
     text-align: left;
     padding-left: 20px;
     line-height: 1.8em;
 }
 
-#card  {
+#card {
     width: 300px;
 }
+
 #expiration {
     width: 180px;
 }
 
 #cvv {
-    width: 80px;}
+    width: 80px;
+}
 
 .terms.offers li {
     margin-top: 20px;
@@ -427,8 +453,8 @@ width: 200px;
 
 .product img {
     width: 60%;
-    height: 60%; 
-    
+    height: 60%;
+
 }
 
 .products {
@@ -516,7 +542,7 @@ width: 200px;
     border-radius: 10px;
     border: black solid 2px;
     padding: 5px 20px;
-    
+
 }
 
 #continue:hover {
