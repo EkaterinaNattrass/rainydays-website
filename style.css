@@ -317,7 +317,7 @@ footer a {
     padding-bottom: 200px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
     .new_collection {
         display: flex;
         flex-direction: column;
@@ -335,6 +335,12 @@ footer a {
     #canoeing {
         margin: 10px 0 10px 0;
         width: 80%;
+    }
+
+    #browse_btn {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px ;
     }
 }
 
@@ -467,8 +473,6 @@ input[type="tel"] {
 .price {
     font-size: 1.3em;
     font-weight: 1.5em;
-    color: black;
-    font-family: "Alata", sans-serif;
     padding: 10px;
 }
 
@@ -501,6 +505,7 @@ input[type="tel"] {
     width: 300px;
     margin: 0px 20px 10px 20px;
 }
+
 .details {
     font-size: 1em;
     line-height: 1.5;
@@ -515,13 +520,10 @@ input[type="tel"] {
     border-bottom: black solid 1px;
 }
 
-.details.more {
+#details_more {
     line-height: 1.5;
-    margin-left: 20px;
+    margin-top: 20px;
 }
-
-
-
 
 #number {
     width: 30px;
@@ -547,7 +549,6 @@ input[type="tel"] {
     border-radius: 10px;
     border: black solid 2px;
     padding: 5px 20px;
-
 }
 
 #continue:hover {

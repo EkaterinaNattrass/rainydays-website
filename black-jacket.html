@@ -15,38 +15,37 @@
 <body>
     <header>
         <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa-solid fa-bars fa-lg"></i>
-            </label>
-            <a href="index.html"><img src="images/RainyDays_Logo.png"
-                    alt="brand logo with mountains and slogan pushing the comfort zone" class="logo">
-            </a>
-            <ul>
-                <li><a href="about.html" class="nav-links">About</a></li>
-                <li><a href="products-women.html" class="nav-links">Women</a></li>
-                <li><a href="products-men.html" class="nav-links">Men</a></li>
-                <li><a href="contacts.html" class="nav-links">Contacts</a></li>
-                <li>
-                    <div>
-                        <form action="/search/" method="get" class="search-bar" role="search">
-                            <input type="text" placeholder="search for a jacket" name="q">
-                            <button id="magnifying_glass"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
-                        </form>
-                    </div>
-                <li><a href="shopping_basket.html" id="shopping_basket"><i
-                            class="fa-solid fa-bag-shopping fa-lg"></i></a>
-                </li>
-            </ul>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </label>
+                <a href="index.html"><img src="images/RainyDays_Logo.png"
+                        alt="brand logo with mountains and slogan pushing the comfort zone" class="logo">
+                </a>
+                <ul>
+                    <li><a href="about.html" class="nav-links">About</a></li>
+                    <li><a href="products-women.html" class="nav-links">Women</a></li>
+                    <li><a href="products-men.html" class="nav-links">Men</a></li>
+                    <li><a href="contacts.html" class="nav-links">Contacts</a></li>
+                    <li>
+                        <div>
+                            <form action="/search/" method="get" class="search-bar" role="search">
+                                <input type="text" placeholder="search for a jacket" id="placeholder" name="q">
+                                <button id="magnifying_glass"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+                            </form>
+                        </div>
+                    <li><a href="shopping_basket.html" id="shopping_basket"><i class="fa-solid fa-bag-shopping fa-lg"></i></a>
+                    </li>
+                </ul>
         </nav>
     </header>
     <div class="product_container">
         <div class="first container">
             <div class="gallery">
                 <img src="images/black-jacket1-unsplash.jpg"
-                    alt="a girl wearing a yellow rain jacket standing on a mountain">
+                    alt="a girl wearing a black jacket standing in the forest">
                 <img src="images/black-jacket-unsplash.jpg"
-                    alt="a girl wearing a yellow rain jacket walking in the forest">
+                    alt="a girl wearing a black jacket in the forest">
             </div>
         </div>
         <div class="second container">
@@ -75,7 +74,7 @@
                 </div>
             </div>
             <div class="order">
-                <div class="price">NOK 1200</div>
+                <div class="price">NOK 1100</div>
                 <div><label for="size" id="size_label">size</label>
                     <select name="size" id="size">
                         <option value></option>
@@ -89,7 +88,7 @@
                     <input type="number" id="number">
                 </div>
             </div>
-            <div class="details more">
+            <div id="details_more">
                 <h3>Product details</h3>
                 <p>
                 <div>Weight 410 gr</div>
@@ -100,12 +99,11 @@
                 <div>Reflective safety logo</div>
                 </p>
             </div>
-
         </div>
         <div class="third container">
             <div><a href="checkout.html" id="buy-now">Buy Now</a>
             </div>
-            <a href="products-women.html" id="continue">Continue shopping</a>
+            <div><a href="products-women.html" id="continue">Continue shopping</a></div>
         </div>
     </div>
     </main>
