@@ -109,16 +109,6 @@ nav ul li {
     }
 }
 
-@media (max-width:700px) {
-    .shipping.info {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .shipping.info input {
-        max-width: 200px;
-    }
-}
 
 .active {
     padding: 10px 0;
@@ -586,7 +576,17 @@ p {
 
 .shipping {
     text-align: center;
+}
 
+@media (max-width:700px) {
+    .shipping.info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shipping.info input {
+        max-width: 200px;
+    }
 }
 
 /* subscribing.html, thank.html */
@@ -600,4 +600,12 @@ p {
 
 .thanks.order {
     font-size: 28px;
+}
+
+@media (max-width:560px) {
+    #buy-now {
+        font-size: 14px;
+        width: 120px;
+        padding: 5px 20px;
+    }
 }
