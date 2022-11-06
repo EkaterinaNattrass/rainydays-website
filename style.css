@@ -109,7 +109,6 @@ nav ul li {
     }
 }
 
-
 .active {
     padding: 10px 0;
     margin: 0 15px;
@@ -168,7 +167,6 @@ footer a {
 
 .subscribe {
     border: none;
-    border-radius: 5px;
 }
 
 .subscribe.submit {
@@ -177,7 +175,6 @@ footer a {
     font-size: 1.1em;
     width: 150px;
     border: none;
-    border-radius: 5px;
     padding: 5px 10px;
 }
 
@@ -545,6 +542,28 @@ input[type="tel"] {
     border: #D77A30 solid 2px;
 }
 
+.third_container {
+    display: flex;
+}
+
+@media (max-width:1342px) {
+    .product_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .first_container {
+        margin-left: 50px;
+    }
+
+    .second_container,
+    .third_container {
+        margin-left: 80px;
+    }
+    .third_container {
+        margin-bottom: 50px;
+    }
+}
+
 
 /* contacts.html */
 
@@ -604,6 +623,11 @@ p {
 
 @media (max-width:560px) {
     #buy-now {
+        font-size: 14px;
+        width: 200px;
+        padding: 7px 40px;
+    }
+    #continue {
         font-size: 14px;
         width: 120px;
         padding: 5px 20px;
