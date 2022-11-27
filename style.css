@@ -272,25 +272,25 @@ footer a {
 
 }
 
-#hiking {
+.hiking {
     background-image: url(images/nathan-dumlao-pLoMDKtl-JY-unsplash.jpg);
     margin: 0 1% 2% 2%;
     background-position: center;
 }
 
-#skiing {
+.skiing {
     background-image: url(images/joris-berthelot-EnTU_hr9wPA-unsplash.jpg);
     margin: 0 2% 2% 1%;
     background-position: center;
 }
 
-#canoeing {
+.canoeing {
     background-image: url(images/brady-stoeltzing-m8oAzXoedho-unsplash.jpg);
     margin: 0 1% 2% 2%;
     background-position: center;
 }
 
-#camping {
+.camping {
     background-image: url(images/victor-larracuente-JQfYGhUcDSg-unsplash.jpg);
     margin: 0 2% 2% 1%;
     background-position: 50% 75%;
@@ -320,10 +320,10 @@ footer a {
         margin-bottom: 50px;
     }
 
-    #hiking,
-    #skiing,
-    #camping,
-    #canoeing {
+    .hiking,
+    .skiing,
+    .camping,
+    .ucanoeing {
         margin: 10px 0 10px 0;
         width: 80%;
     }
@@ -540,7 +540,6 @@ input[type="tel"] {
     #number {
         margin: 20px;
     }
-
 }
 
 #buy-now {
@@ -558,7 +557,6 @@ input[type="tel"] {
     background-color: var(--orange-hover);
 }
 
-
 /* jacket-women, jacket-men.html */
 
 .product_container {
@@ -567,7 +565,6 @@ input[type="tel"] {
     width: 100%;
     justify-content: space-evenly;
     margin-top: 50px;
-
 }
 
 .first_container img {
@@ -771,7 +768,7 @@ p {
 
 /* subscribing.html, thank.html */
 
-.thanks {
+.thanks, .your_order {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -779,17 +776,13 @@ p {
     align-items: center;
     line-height: 4;
     font-size: 20px;
+}
+
+.thanks {
     margin: 150px 10px 0 10px;
 }
 
 .your_order {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    line-height: 4;
-    font-size: 20px;
     margin: 100px 10px 0 10px;
     text-align: center;
 }
