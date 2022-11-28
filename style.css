@@ -522,13 +522,8 @@ input[type="tel"] {
         height: auto;
     }
 
-    .size {
+    #size1, #size2, #size3, #size4 {
         align-self: center;
-    }
-
-    .size_label {
-        align-self: center;
-        padding: 10px;
     }
 
     .order {
@@ -555,6 +550,7 @@ input[type="tel"] {
 
 .buy-now:hover {
     background-color: var(--orange-hover);
+    color: white;
 }
 
 /* jacket-women, jacket-men.html */
