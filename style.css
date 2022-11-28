@@ -482,6 +482,10 @@ input[type="tel"] {
     margin-bottom: 70px;
 }
 
+.product.description div {
+    display: flex;
+}
+
 .product img {
     width: 300px;
     height: 400px;
@@ -522,7 +526,10 @@ input[type="tel"] {
         height: auto;
     }
 
-    #size1, #size2, #size3, #size4 {
+    #size1,
+    #size2,
+    #size3,
+    #size4 {
         align-self: center;
     }
 
@@ -764,7 +771,8 @@ p {
 
 /* subscribing.html, thank.html */
 
-.thanks, .your_order {
+.thanks,
+.your_order {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -788,7 +796,7 @@ p {
 }
 
 @media (max-width:560px) {
-    #buy-now {
+    .buy-now {
         font-size: 14px;
         width: 200px;
         padding: 7px 40px;
