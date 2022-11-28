@@ -522,11 +522,11 @@ input[type="tel"] {
         height: auto;
     }
 
-    #size {
+    .size {
         align-self: center;
     }
 
-    #size_label {
+    .size_label {
         align-self: center;
         padding: 10px;
     }
@@ -542,7 +542,7 @@ input[type="tel"] {
     }
 }
 
-#buy-now {
+.buy-now {
     text-transform: uppercase;
     color: white;
     background-color: var(--the-right-brown);
@@ -553,7 +553,7 @@ input[type="tel"] {
     text-align: center;
 }
 
-#buy-now:hover {
+.buy-now:hover {
     background-color: var(--orange-hover);
 }
 
