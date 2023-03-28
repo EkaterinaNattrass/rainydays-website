@@ -7,6 +7,7 @@ function validateInput() {
     if (validateEmail(input.value) === true) {
         error.style.display = "none";
         popUp.style.display = "block";
+        input.value = "";
     }
     else {
         error.style.display = "block"
