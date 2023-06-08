@@ -1,5 +1,7 @@
 # Rainydays
 
+<img src="RainyDays.png" width=75%></img>
+
 An e-commerce website for a fictitional outdoor clothing vendor as a course assignment for HTML and CSS Module, Front-End Development at Noroff.
 
 ## Description
