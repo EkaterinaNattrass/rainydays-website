@@ -25,6 +25,7 @@ The project was built with:
 - HTML 5
 - CSS
 - Javascript
+- WordPress
 
 ## Getting started
 
@@ -36,7 +37,8 @@ The project was built with:
 
 ### Running
 
-The project contains only static files, you can find the index page at `public/index.html`
+The project contains only static files, you can find the index page at `public/index.html`.
+WordPress is used as a Content Management System, hosted at [one.com](www.one.com) and calls to the API are made within the client side code. Therefore you will also need an active internet connection.
 
 ### Contributing
 
